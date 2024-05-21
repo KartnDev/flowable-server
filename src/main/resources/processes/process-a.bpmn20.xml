@@ -6,5 +6,40 @@
              typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath"
              targetNamespace="http://www.flowable.org/processdef">
     <process id="process-a" name="process-a" isExecutable="true">
+        <startEvent id="sid-c0765d1a-4c3c-4318-b66a-515df82e79cc"/>
+        <endEvent id="sid-03f69b41-1305-40d2-9695-95d8a784bf7e"/>
+        <userTask id="sid-170f8e64-16ec-4d4c-8cdf-6b3e6b4cbaec"/>
+        <sequenceFlow id="sid-483985c8-91a9-4d60-9fcf-cbd2f48ebf32" sourceRef="sid-c0765d1a-4c3c-4318-b66a-515df82e79cc"
+                      targetRef="sid-170f8e64-16ec-4d4c-8cdf-6b3e6b4cbaec"/>
+        <sequenceFlow id="sid-64d9298f-bc66-405f-b99a-0970059f826a" sourceRef="sid-170f8e64-16ec-4d4c-8cdf-6b3e6b4cbaec"
+                      targetRef="sid-03f69b41-1305-40d2-9695-95d8a784bf7e"/>
+
     </process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_process-a">
+        <bpmndi:BPMNPlane bpmnElement="process-a" id="BPMNPlane_process-a">
+            <bpmndi:BPMNShape id="shape-5939ceb6-5949-4cda-a8d7-0810e532f146"
+                              bpmnElement="sid-c0765d1a-4c3c-4318-b66a-515df82e79cc">
+                <omgdc:Bounds x="-140.0" y="-135.0" width="30.0" height="30.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="shape-dae088b7-dc0c-4d1f-9fb7-038e2a9a04a3"
+                              bpmnElement="sid-03f69b41-1305-40d2-9695-95d8a784bf7e">
+                <omgdc:Bounds x="80.0" y="-135.0" width="30.0" height="30.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="shape-152f4acb-14ea-4b9a-a08f-50ec18350b1f"
+                              bpmnElement="sid-170f8e64-16ec-4d4c-8cdf-6b3e6b4cbaec">
+                <omgdc:Bounds x="-60.0" y="-150.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge id="edge-ff5fdbcd-cadf-43ab-a37a-56d24fc1a686"
+                             bpmnElement="sid-483985c8-91a9-4d60-9fcf-cbd2f48ebf32">
+                <omgdi:waypoint x="-110.0" y="-127.5"/>
+                <omgdi:waypoint x="-60.0" y="-130.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="edge-0b2ade6d-8f78-4f5f-8a88-1206a0519367"
+                             bpmnElement="sid-64d9298f-bc66-405f-b99a-0970059f826a">
+                <omgdi:waypoint x="41.0" y="-110.0"/>
+                <omgdi:waypoint x="55.0" y="-90.0"/>
+                <omgdi:waypoint x="80.0" y="-112.5"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
 </definitions>
